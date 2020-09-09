@@ -33,9 +33,37 @@ container.appendChild(h4wand)
 
 const ul = document.createElement('ul')
 ul.setAttribute('storage', 'trunk')
-ul.innerHTML = '<li>butter beer</li><li class="secret">invisibility cloak</li><li class="secret">magic map</li><li class="secret">time turner</li><li class="cat">leash</li><li>bertie bott\'s every flavor [jelly] beans</li>'
-console.log(ul)
+// ul.innerHTML = '<li>butter beer</li><li class="secret">invisibility cloak</li><li class="secret">magic map</li><li class="secret">time turner</li><li class="cat">leash</li><li>bertie bott\'s every flavor [jelly] beans</li>'
+//console.log(ul)
 container.appendChild(ul)
+
+const li1 = document.createElement('li')
+li1.innerText = 'butter beer'
+ul.appendChild(li1)
+
+const li2 = document.createElement('li')
+li2.classList.add('secret')
+li2.innerText = 'invisibility cloak'
+ul.appendChild(li2)
+
+const li3 = document.createElement('li')
+li3.classList.add('secret')
+li3.innerText = 'magic map'
+ul.appendChild(li3)
+
+const li4 = document.createElement('li')
+li4.classList.add('secret')
+li4.innerText = 'time turner'
+ul.appendChild(li4)
+
+const li5 = document.createElement('li')
+li5.classList.add('cat')
+li5.innerText = 'leash'
+ul.appendChild(li5)
+
+const li6 = document.createElement('li')
+li6.innerText = 'bertie bott\'s every flavor [jelly] beans'
+ul.appendChild(li6)
 
 // YEAR FOUR
 
@@ -46,7 +74,6 @@ const h5 = document.createElement('h5')
 h5.innerText = 'spring 2017'
 container.insertBefore(h5, table)
 
-// THEAD -- DAYS AND CLASSES (headers)
 const thead = document.createElement('thead')
 table.appendChild(thead)
 
@@ -112,3 +139,14 @@ table.appendChild(tr5)
     const tdfridayclass = document.createElement('td')
     tdfridayclass.innerText = 'astronomy, muggle studies, care of magical creatures'
     tr5.appendChild(tdfridayclass)
+
+// YEAR FIVE
+
+h4wand.remove() // select element containing wand and remove
+li1.remove() // remove butter beet from list
+container.insertBefore(h4wand, ul) // adding element containing wand back after pet name
+h4wand.innerText = 'hawthorn wand with unicorn hair core' // new text describing new wand
+h4wand.style.color = 'gold'
+container.appendChild(h4pet) // moving pet to the bottom of the page
+h4pet.remove() // removing pet from DOM
+container.insertBefore(h4pet, h4wand) // moved aka re-inserted pet to original location before wand
