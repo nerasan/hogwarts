@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Nanum+Pen+Script&display=swap');
+
 body {
     background-color: #0d6217;
     text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 20px;
+    background-image: url("https://www.desktopbackground.org/p/2015/12/28/1064294_slytherin-slytherin-wallpapers-7748794-fanpop_800x600_h.jpg");
+    background-size: auto;
 }
 
 .cat {
@@ -24,4 +31,33 @@ table {
 
 .cabbage {
     color: chartreuse;
+}
+
+h1 {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+}
+h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+ul {
+    margin: 40px;
+}
+h4 {
+    margin: 3px;
+}
+h5 {
+    font-size: 30px;
+    margin: 5px;
+}
+th {
+    font-weight: bolder;
+    color: gold;
 }

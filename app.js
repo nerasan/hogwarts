@@ -159,7 +159,7 @@ container.insertBefore(h4pet, h4wand) // moved aka re-inserted pet to original l
 
 // hide belongings with class of secret
 const secret = document.getElementsByClassName('secret')
-console.log(secret)
+//console.log(secret)
 secret[0].style.opacity = '0'
 secret[1].style.opacity = '0'
 secret[2].style.opacity = '0'
@@ -178,6 +178,18 @@ reappear()
 // adding class cabbage to pet's leash 
 li5.classList.add('cabbage')
 
+// removing class cabbage and keeping it to cat
 li5.classList.remove('cabbage')
-console.log(li5)
-console.log(h4pet)
+//console.log(li5)
+//console.log(h4pet)
+
+// YEAR SEVEN
+h5.innerText = 'fall 2018' // update class schedule to fall 2018
+
+// buy more butter beer
+const li7 = document.createElement('li')
+li7.innerText = 'butter beer'
+ul.insertBefore(li7, li2)
+
+// replace ul property from trunk to chest
+ul.setAttribute('storage', 'chest')
