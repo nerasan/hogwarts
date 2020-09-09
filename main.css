@@ -12,3 +12,11 @@ body {
 li {
     list-style-type: none;
 }
+table, th, td {
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+
+table {
+    margin: 0 auto;
