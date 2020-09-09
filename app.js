@@ -2,6 +2,8 @@
 //     console.log('DOM is loaded!')
 // })
 
+// YEAR ONE 
+
 const container = document.querySelector('#container')
 //console.log(container)
 
@@ -9,6 +11,8 @@ const h1 = document.createElement('h1')
 //console.log(h1)
 h1.innerText = 'welcome to hogwarts!'
 container.appendChild(h1)
+
+// YEAR TWO
 
 const h2 = document.createElement('h2')
 h2.innerText = 'salima harun'
@@ -150,3 +154,30 @@ h4wand.style.color = 'gold'
 container.appendChild(h4pet) // moving pet to the bottom of the page
 h4pet.remove() // removing pet from DOM
 container.insertBefore(h4pet, h4wand) // moved aka re-inserted pet to original location before wand
+
+// YEAR SIX 
+
+// hide belongings with class of secret
+const secret = document.getElementsByClassName('secret')
+console.log(secret)
+secret[0].style.opacity = '0'
+secret[1].style.opacity = '0'
+secret[2].style.opacity = '0'
+
+// show secret belongings after 2 seconds using setTimeout 
+const reappear = () => {
+    setTimeout(function(){ 
+        secret[0].style.opacity = '0.5'
+        secret[1].style.opacity = '0.5'
+        secret[2].style.opacity = '0.5'
+    }, 3000)
+}
+
+reappear()
+
+// adding class cabbage to pet's leash 
+li5.classList.add('cabbage')
+
+li5.classList.remove('cabbage')
+console.log(li5)
+console.log(h4pet)
